@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Russo+One&display=swap" rel="stylesheet">
+    <title>SITE-VISITKA</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header class = "clearfix">
+            <a id = "logo" href="index.html"> <span class = "pink">Сайт</span>  <i>визитка</i></a> 
+            <nav id = "mainnav">
+            <ul>
+                <li class = "active"><a href="uslugi.html">Услуги</a></li>
+                <li class = "active"><a href="aboutus.html">О нас</a></li>
+                <li class = "active"><a href="clients.html">Клиенты</a></li>
+                <li class = "active"><a href="contacts.html">Контакты</a></li>
+            </ul>
+           </nav> 
+        </header>
+        <main>
+            <form action = "" id = "contact-form">
+                <div class = "form_item">
+                    <label for="topic">Тема</label><br>
+                    <select name="topic" id="topic">
+                        <option value="1">Заказать услугу</option>
+                        <option value="2">Оставить отзыв/замечание</option>
+                        <option value="3">Предложить сотрудничество</option>
+                        <option value="4">Другое</option>
+                    </select>
+                </div>
+                <div class = "form_item">
+                    <label for="name">Имя</label><br>
+                    <input name="name" id="name" type="text" placeholder="Напишите свое имя" required>  
+                </div>
+                <div class = "form_item">
+                    <label for="">Ваш возраст</label><br>
+                    <input type="number" min = "18" max ="45" required>
+                </div>
+                <div class = "form_item">
+                    <label for="">E-mail</label><br>
+                    <input name="name" id="txt" type="email" placeholder="Напишите Ваш e-mail" required>
+                    
+                </div>
+                <div class = "form_item">
+                    <label for="textarea">Текст сообщения</label><br>
+                    <textarea name="textarea" id="textarea" rows = "5" required></textarea>
+                </div>
+                
+                <div class = "form_item">
+                    <input type="submit" formaction="tyforform.html">
+                </div>
+                
+        </form>
+        </main>
+    </div>
+    <footer >
+        <p class = "footer_block"><a href = "forms.html" class = "footer-a">Написать нам &#9650;</a></p>
+        <p class = "footer_block">&copy; Новая компания</p>
+        <div class = "footer_icons">
+            <img src="img/ok.png" class = "footer_img" alt="odnoklassniki">
+            <img src="img/vk-social-logotype.png" class = "footer_img" alt="vk">
+            <img src="img/mailru.png" class = "footer_img" alt="mail.ru">
+        </div>
+    </footer>
+</body>
+</html>
